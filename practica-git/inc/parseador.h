@@ -14,7 +14,7 @@ using namespace std;
 class parseador {
 private:
 	queue<float, MAX_ELEMENTS> m_numbers;
-	const string c_commands[2] = { "SUM","MULT" };
+	const string c_commands[2] = { "sum","mult" };
 	float m_result;
 
 public:
