@@ -14,7 +14,7 @@ all: out $(OBJECTS)
 out:
 	@mkdir -p $@
 
-out/%.o: src/%.c
+out/%.o: src/%.cpp
 	@echo CC $<
 	@$(CC) $(CFLAGS) -c -o $@ $<
 

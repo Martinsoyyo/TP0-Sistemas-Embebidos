@@ -50,6 +50,9 @@ bool shape_move(shape_t *me, uint32_t dx, uint32_t dy);
 *		@params: Recibe el puntero al objeto y la cantidad de espacio que se quiere trasladar la figura.
 *		@return: la distancia entre ambas figuras
 **/
+
+bool shape_rotate(shape_t * me, float angle);
+
 float shape_distance_from(shape_t *me, shape_t *shape);
 
 

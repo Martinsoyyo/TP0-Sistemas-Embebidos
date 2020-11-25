@@ -1,10 +1,10 @@
-#ifndef RECTANGLE_H
-#define RECTANGLE_H 
+#ifndef LINE_H
+#define LINE_H
 
 #include "shape.h"
 #include <stdint.h>
 
-/* Estructura principal que representa la clase "línea" */
+/* Estructura principal que representa la clase "linea" */
 typedef struct {
 	shape_t super;			// Clase de la cual se hereda
 	coordinate_t start;		// Coordenada de origen
@@ -12,8 +12,8 @@ typedef struct {
 } line_t;
 
 
-/** 	@brief: Contructor del objeto "línea"
-*		@params: recibe el puntero al objeto y las coordenadas para definir el segmento de línea.
+/** 	@brief: Contructor del objeto "linea"
+*		@params: recibe el puntero al objeto y las coordenadas para definir el segmento de linea.
 *		@return: Devuelve verdadero sii encontró memoria para guardar el objeto.
 **/
 bool line_ctor(line_t *me, uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2);
